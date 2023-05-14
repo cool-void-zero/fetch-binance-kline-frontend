@@ -71,7 +71,7 @@
 
     const drawChart = (data = []) => {
         if(data.length === 0) return;
-
+        
         const element = document.getElementById("kline-chart");
         const chart_data = google.visualization.arrayToDataTable(data, true);
         const chart = new google.visualization.CandlestickChart(element);
